@@ -1,4 +1,5 @@
 # Bengaluru Real Estate Price Prediction
+🔗 **Live Demo:** [Open the app](https://real-estate-price-prediction-ag3iefaklunth6perklhvc.streamlit.app/)
 
 ## Overview
 An end-to-end data analysis and machine learning project predicting residential property prices in Bengaluru, using SQL for data storage/analysis and Python for modeling. Built as a Bengaluru-based student, using local market knowledge to guide analysis choices.
@@ -84,3 +85,6 @@ SOURCE sql/queries.sql;
 - Add geographic distance-to-city-center as a feature
 - Try gradient boosting models (XGBoost, LightGBM) for comparison
 - Deploy as a simple web app for interactive price prediction
+
+## Deployment Note
+The deployed demo reads a pre-exported CSV snapshot of the cleaned data, since cloud hosting can't reach a local MySQL database. The full pipeline (MySQL storage + SQL analysis) is in `load_data.py` and `sql/queries.sql`.
